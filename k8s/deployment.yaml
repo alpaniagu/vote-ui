@@ -9,8 +9,8 @@ spec:
   strategy:
   type: RollingUpdate
   rollingUpdate:
-    maxSurge: 2
-    maxUnavailable: 35%
+    maxSurge: 1
+    maxUnavailable: 25%
   selector:
     matchLabels:
       app: vote-ui
