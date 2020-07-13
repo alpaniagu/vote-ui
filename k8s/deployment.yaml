@@ -5,11 +5,11 @@ metadata:
     app: vote-ui
   name: vote-ui
 spec:
-  replicas: 3
+  replicas: 5
   strategy:
   type: RollingUpdate
   rollingUpdate:
-    maxSurge: 1
+    maxSurge: 2
     maxUnavailable: 25%
   selector:
     matchLabels:
