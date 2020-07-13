@@ -10,7 +10,7 @@ spec:
   type: RollingUpdate
   rollingUpdate:
     maxSurge: 2
-    maxUnavailable: 25%
+    maxUnavailable: 35%
   selector:
     matchLabels:
       app: vote-ui
